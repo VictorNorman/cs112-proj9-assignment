@@ -1,0 +1,7 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/vtn2/classes/cs112/cs112-assignment-repos/cs112-lab4-assignment'
+c++  -Wall -I. -g  -c -o tests.o tests.cpp
+make: Leaving directory `/Users/vtn2/classes/cs112/cs112-assignment-repos/cs112-lab4-assignment'
+ 
+make: *** No rule to make target `main.cpp', needed by `obj'.
+
