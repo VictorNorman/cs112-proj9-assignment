@@ -324,13 +324,15 @@ TEST_CASE("remove") {
 //         REQUIRE(!q1.isFull());
 //     }
 //     SECTION("set the capacity to zero") {
+//         ArrayQueue<int> q1(10);
+//         q1.setCapacity(5);
 //         REQUIRE_THROWS_AS(q1.setCapacity(0), QueueException);
-// 		// check to make sure nothing was changed
-// 		REQUIRE(q1.getCapacity() == 5);
-// 		REQUIRE(q1.getSize() == 0);
-// 		REQUIRE(q1.isEmpty());
-// 		REQUIRE(!q1.isFull());
-// 	}
+// 	    	// check to make sure nothing was changed
+// 	    	REQUIRE(q1.getCapacity() == 5);
+// 	    	REQUIRE(q1.getSize() == 0);
+// 	    	REQUIRE(q1.isEmpty());
+// 	    	REQUIRE(!q1.isFull());
+// 	    }
 
 //     SECTION("changing capacity on a queue with items that start at the beginning of the array") {
 //         ArrayQueue<int> q2(5);
