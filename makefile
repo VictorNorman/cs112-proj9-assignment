@@ -30,6 +30,6 @@ obj: $(SOURCES) $(INCLUDES) tests.cpp main.cpp
 	@echo "Compilation complete!"
 
 clean:
-	$(rm) $(TARGET) $(OBJECTS) tests.o main.o
+	$(rm) $(TARGET) $(TEST_TARGET) $(OBJECTS) tests.o main.o
 	@echo "Cleanup complete!"
 
