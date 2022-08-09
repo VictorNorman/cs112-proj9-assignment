@@ -22,7 +22,7 @@ $(TARGET): obj main.o
 	@echo "Linking complete!"
 
 $(TEST_TARGET): obj tests.o
-	$(LINKER) $(TARGET) $(LFLAGS) $(OBJECTS) tests.o
+	$(LINKER) $(TEST_TARGET) $(LFLAGS) $(OBJECTS) tests.o
 	@echo "Linking complete!"
 
 obj: $(SOURCES) $(INCLUDES) tests.cpp main.cpp

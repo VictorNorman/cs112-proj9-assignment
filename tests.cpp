@@ -69,6 +69,7 @@ TEST_CASE("append") {
     }
     SECTION("1 item") {
         ArrayQueue q1(4);
+        q1.append(11);
         q1.append(22);
         REQUIRE(!q1.isEmpty());
         REQUIRE(!q1.isFull());
@@ -77,6 +78,7 @@ TEST_CASE("append") {
     }
     SECTION("2 items") {
         ArrayQueue q1(4);
+        q1.append(11);
         q1.append(22);
         q1.append(33);
         REQUIRE(!q1.isEmpty());
@@ -86,6 +88,7 @@ TEST_CASE("append") {
     }
     SECTION("3 items") {
         ArrayQueue q1(4);
+        q1.append(11);
         q1.append(22);
         q1.append(33);
         q1.append(44);
@@ -95,6 +98,11 @@ TEST_CASE("append") {
         REQUIRE(q1.getLast() == 44);
     }
     SECTION("full queue") {
+        ArrayQueue q1(4);
+        q1.append(11);
+        q1.append(22);
+        q1.append(33);
+        q1.append(44);
         REQUIRE_THROWS_AS(q1.append(55), FullQueueException);
     }
 }
